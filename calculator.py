@@ -5,6 +5,11 @@ calculator.py
 One function per operation, in order.
 """
 
+# https://github.com/alugo3-star/lab10-JG-AL.git
+# Partner 1: Joseph Gedaly
+# Partner 2: Andres Lugo
+
+
 import math
 
 # First example
@@ -19,13 +24,20 @@ def mul(a, b):
 
 def div(a, b):
     if a == 0:
-        raise ZeroDivisionError("Cannot divide by zero")
+        raise ZeroDivisionError
     return b/ a
 
 def log(a, b):
     if a <= 0 or a == 1 or b <=0:
-        raise ValueError("Invalid base or argument for logarithm")
+        raise ValueError
     return math.log(b, a)
 
 def exp(a, b):
     return a**b
+
+def square_root(a):
+    if a < 0:
+        raise ValueError
+
+def hypotenuse(a, b):
+    math.hypot(a, b)
