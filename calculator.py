@@ -1,13 +1,14 @@
+# https://github.com/alugo3-star/lab10-JG-AL.git
+# Partner 1: Joseph Gedaly
+# Partner 2: Andres Lugo
+
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
 
 One function per operation, in order.
 """
-
-# https://github.com/alugo3-star/lab10-JG-AL.git
-# Partner 1: Joseph Gedaly
-# Partner 2: Andres Lugo
 
 
 import math
@@ -16,7 +17,7 @@ import math
 def add(a, b): 
     return a + b
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 def mul(a, b):
@@ -27,7 +28,7 @@ def div(a, b):
         raise ZeroDivisionError
     return b/ a
 
-def log(a, b):
+def logarithm(a, b):
     if a <= 0 or a == 1 or b <=0:
         raise ValueError
     return math.log(b, a)

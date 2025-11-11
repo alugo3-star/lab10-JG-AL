@@ -1,5 +1,10 @@
+# https://github.com/alugo3-star/lab10-JG-AL.git
+# Partner 1: Joseph Gedaly
+# Partner 2: Andres Lugo
+
+
 import unittest
-from calculator import add, sub, mul, div, log, hypotenuse, square_root exp
+from calculator import add, subtract, mul, div, logarithm, hypotenuse, square_root
 
 class TestCalculator(unittest.TestCase):
     # Partner 2
@@ -9,15 +14,15 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(0, 0), 0)
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(sub(5, 3), 3)
-        self.assertEqual(sub(-3, -1), -2)
-        self.assertEqual(sub(0, 5), -5)
+        self.assertEqual(subtract(5, 3), 3)
+        self.assertEqual(subtract(-3, -1), -2)
+        self.assertEqual(subtract(0, 5), -5)
 
 
     def test_multiply(self): # 3 assertions
         self.assertequal(mul(5, 3), 15)
         self.assertEqual(mul(-2, 3), -6)
-        self.assertEqual(sub(5, 0), 0)
+        self.assertEqual(mul(5, 0), 0)
 
     def test_divide(self): # 3 assertions
         self.assertEqual(div(3, 6), 2)
@@ -31,20 +36,20 @@ class TestCalculator(unittest.TestCase):
             div(0, 5)
 
     def test_logarithm(self): # 3 assertions
-        self.assertAlmostEqual(log(2, 8), 3.0)
-        self.assertAlmostEqual(sub(10, 1000), 3.0)
-        self.assertAlmostEqual(sub(3, 27), 3.0)
+        self.assertAlmostEqual(logarithm(2, 8), 3.0)
+        self.assertAlmostEqual(logarithm(10, 1000), 3.0)
+        self.assertAlmostEqual(logarithm(3, 27), 3.0)
 
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(1, 10)
+            logarithm(1, 10)
 
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
     #     # call log function inside, example:
         with self.assertRaises(ValueError):
-            log(0, 5)
+            logarithm(0, 5)
 
 
     def test_hypotenuse(self): # 3 assertions
