@@ -20,7 +20,7 @@ class TestCalculator(unittest.TestCase):
 
 
     def test_multiply(self): # 3 assertions
-        self.assertequal(mul(5, 3), 15)
+        self.assertEqual(mul(5, 3), 15)
         self.assertEqual(mul(-2, 3), -6)
         self.assertEqual(mul(5, 0), 0)
 
